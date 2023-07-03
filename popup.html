@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Popup in JS</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      html {
+        font-size: 100%;
+      }
+      body {
+        width: 100%;
+        height: 100%;
+        background: #000;
+        color: azure;
+        text-align: center;
+      }
+      h2 {
+        margin: 2rem auto;
+        font-size: 3rem;
+        color: rgb(0, 213, 0);
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+      h3 {
+        margin-bottom: 1rem;
+      }
+      button {
+        background-color: beige;
+        padding: 0.7rem 2rem;
+        border-radius: 0.3rem;
+        color: #000;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+      }
+      .logo {
+        display: block;
+        width: 10rem;
+      }
+      button:hover {
+        background: green;
+        color: #fff;
+      }
+      img {
+        display: block;
+        width: 40rem;
+        margin: auto;
+        margin-top: 2rem;
+        border-radius: 2rem;
+      }
+      .poopup-wrapperr {
+        display: none;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        width: 100vw;
+        /* height: 50rem; */
+        height: 800px;
+        background: rgba(153, 153, 153, 0.6);
+      }
+      .popup {
+        display: flex;
+        margin: auto;
+        justify-self: center;
+        top: 9rem;
+        width: 100%;
+        max-width: 30rem;
+        height: 25rem;
+        background: #fff;
+        color: #000;
+        position: relative;
+      }
+      .popup-content {
+        padding: 3rem;
+      }
+      .popup-content h1 {
+        margin-bottom: 2rem;
+      }
+      .popup-content p {
+        font-size: 1.1rem;
+      }
+      .popup-content button {
+        margin-top: 2.5rem;
+        background: green;
+        color: #fff;
+        border: none;
+      }
+      .popup .cross {
+        position: absolute;
+        top: 1px;
+        cursor: pointer;
+        right: 0.5rem;
+        font-size: 1.5rem;
+      }
+
+      @media screen and (max-width: 800px) {
+        html {
+          font-size: 80%;
+        }
+      }
+      @media screen and (max-width: 620px) {
+        html {
+          font-size: 60%;
+        }
+      }
+      @media screen and (max-width: 450px) {
+        html {
+          font-size: 45%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Pakistan Academy</h2>
+    <h3>Click Below To Check Coursres</h3>
+    <button type="button" class="show">View Details</button>
+    <img
+      src="https://almustafa.pk/wp-content/uploads/2020/02/Al-Mustafa-Academy-MFL.jpg"
+      alt="error"
+    />
+
+    <div class="poopup-wrapperr">
+      <div class="popup">
+        <div class="cross">x</div>
+        <div class="popup-content">
+          <h1>50% Off On MERN Stack Course</h1>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
+            voluptatem temporibus voluptates enim, iure in quibusdam voluptate
+            quas fugit et quasi ducimus, magni, pariatur velit possimus
+            accusamus illum expedita. Nulla.
+          </p>
+          <button type="button">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <script src="./popup.js"></script>
+  </body>
+</html>
